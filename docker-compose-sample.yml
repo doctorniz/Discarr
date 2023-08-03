@@ -1,7 +1,7 @@
 version: "2"
 services:
   discarr:
-    image: github.com/nizar/Discarr:main
+    build: https://github.com/doctorniz/discarr.git
     container_name: discarr
     environment:
       - PUID=1000
