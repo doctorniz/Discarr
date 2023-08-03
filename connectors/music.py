@@ -2,7 +2,6 @@ import os
 import requests
 from dotenv import load_dotenv
 from urllib.parse import urljoin
-from requests.exceptions import HTTPError
 
 load_dotenv()
 host_url = urljoin(os.getenv('LIDARR_URL'), 'api/v1/')
