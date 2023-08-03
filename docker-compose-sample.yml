@@ -1,0 +1,39 @@
+version: "2"
+services:
+  discarr:
+    image: github.com/nizar/Discarr:main
+    container_name: discarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+
+      - TOKEN=DISCORD_BOT_TOKEN
+
+ #     - READARR_BOOK_URL=
+ #     - READARR_BOOK_APIKEY=
+
+ #     - READARR_AUDIOBOOK_URL=
+ #     - READARR_AUDIOBOOK_APIKEY=
+
+ #     - RADARR_URL=
+ #     - RADARR_APIKEY=
+ #     - RADARR_QUALITY=
+
+ #     - SONARR_URL=
+ #     - SONARR_APIKEY=
+ #     - SONARR_QUALITY='HD-1080p'
+
+ #     - LIDARR_URL=
+ #     - LIDARR_APIKEY=
+
+ #     - BOT_TRIGGER="!"
+ #     - BOT_TRIGGER_CHOOSE="!c"
+
+ #     - BOT_TRIGGER_BOOK="!b"
+ #     - BOT_TRIGGER_AUDIOBOOK="!a"
+ #     - BOT_TRIGGER_MOVIE="!m"
+ #     - BOT_TRIGGER_TVSHOW="!t"
+ #     - BOT_TRIGGER_MUSIC="!s"
+
+    restart: unless-stopped
