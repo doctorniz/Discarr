@@ -16,7 +16,7 @@ async def on_message(message):
     global results
     global object_type
     trigger_words = get_trigger_words()
-
+    
     if message.author == client.user:
         return
     
