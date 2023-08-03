@@ -1,5 +1,5 @@
 FROM python:3.10.5
-FROM gorialis/discord.py
+#FROM gorialis/discord.py
 
 ENV PYTHONUNBUFFERED=1
 WORKDIR /app
