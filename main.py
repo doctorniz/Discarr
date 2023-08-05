@@ -95,6 +95,8 @@ async def on_message(message):
             await message.channel.send(return_results(b, "album", trigger_words)) 
         else:
             await message.channel.send("It looks like Lidarr has not been set properly. Please ensure the container running this script has access to the Lidarr instance, and the API key is entered correctly.")
+    
+    return
 
 
 client.run(os.getenv('TOKEN'))
